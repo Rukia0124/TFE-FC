@@ -1,0 +1,426 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F7F3;
+}
+
+
+/* Reset le style des éléments de liste */
+.navbar-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Style de chaque élément de liste */
+.navbar-ul li {
+  float: right;
+  /* Aligné à droite */
+  margin-right: 30px;
+}
+
+/* Style des liens */
+.nav-link {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  /* Supprime le soulignement */
+}
+
+/* Style de la navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.511);
+  transition: background-color 0.3s ease;
+  z-index: 50;
+  width: 100%;
+}
+
+/* Style du logo */
+.logo {
+  float: left;
+  margin-right: 20px;
+  color: white;
+  /* Remplacer par la couleur de votre choix */
+}
+
+
+
+#head {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("MSF.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.8);
+}
+
+#head::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Couleur noire avec une opacité de 0.8 */
+}
+
+header #head h1 {
+  z-index: 10;
+  font-size: 75px;
+  width: 80%;
+  margin-left: 80px;
+  margin-top: 100px;
+
+}
+
+#head p {
+  z-index: 10;
+
+  font-style: italic;
+  font-size: 25px;
+  width: 80%;
+  margin-left: 80px;
+  margin-top: 30px;
+
+}
+
+#head button {
+  z-index: 10;
+  width: 400px;
+  margin-top: 30px;
+  margin-left: 80px;
+  padding: 15px;
+  border: none;
+  background-color: #7266AE;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  /* Ajouter une couleur de fond pour mieux voir la section */
+}
+
+#section1 {
+
+  display: flex;
+  background-color: #F8EBD8;
+  ;
+  align-items: center;
+  overflow: hidden;
+  margin: 50px;
+  /* Pour cacher toute partie d'image qui déborde */
+  height: calc(100vh - 100px);
+  /* La hauteur de #section1 prend 100% de la section parente */
+
+
+}
+
+#section1 img {
+  background-color: transparent;
+  object-fit: cover;
+  height: 100%;
+  /* La hauteur de l'image prend 100% de la hauteur de #section1 */
+  max-width: 50%;
+  /* La largeur maximale de l'image est de 50% de la section */
+  margin-right: 20px;
+}
+
+.section1-text {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 200px;
+}
+
+#section1 h2 {
+
+  text-align: left;
+  justify-self: start;
+  font-size: 50px;
+  color: #7266AE;
+}
+
+#section1 p {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#section1 button {
+  width: 80%;
+  margin-top: 30px;
+  padding: 15px;
+  border: none;
+  background-color: #7266AE;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+
+}
+
+#section2 {
+  text-align: center;
+  margin: 0;
+  margin-top: 100px;
+  padding: 50px 0;
+  /* Centrer le texte horizontalement */
+}
+
+#section2 h2 {
+  margin-bottom: 30px;
+  font-size: 50px;
+
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centrer les divs horizontalement */
+}
+
+.projects div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  /* Centrer le texte horizontalement */
+}
+
+.projects img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  margin: 15px;
+  border-radius: 10px;
+
+}
+
+
+.projects p {
+  height: 130px;
+  width: 400px;
+  margin-top: 15px;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+#section3 {
+  padding: 0 50px;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+#section3 h2 {
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+#section3>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  margin: 40px;
+}
+
+#section3 div h3 {
+  margin-bottom: 30px;
+}
+
+#section3 div p {
+  margin-bottom: 15px;
+}
+
+#section3 div button {
+  padding: 0;
+  border: none;
+  color: black;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  text-align: left;
+}
+
+.suivi {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  /* Add this line */
+  margin: 50px;
+}
+
+.suivi>div {
+  position: relative;
+  width: 20%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.suivi>div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* Adjusted to center the line vertically */
+  transform: translateY(-50%);
+  /* Center the line vertically */
+  right: -15%;
+  height: 90%;
+  /* Adjusted to match the height of the div */
+  width: 2px;
+  background-color: #7266AE;
+}
+
+#section4 {
+  display: flex;
+  background-color: #7266AE;
+  align-items: center;
+  overflow: hidden;
+  height: 600px;
+}
+
+.section4-texte {
+  margin-left: 130px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* Centrer le contenu au début de la colonne */
+  padding: 50px;
+  color: white;
+}
+
+#section4 h2 {
+  color: #F8EBD8;
+  text-align: left;
+  font-size: 50px;
+  margin: 0;
+  /* Supprimer la marge par défaut du h2 */
+}
+
+#section4 h3 {
+  font-style: italic;
+  margin: 10px 0;
+  /* Ajouter un espacement autour du h3 */
+}
+
+#section4 p {
+  text-align: justify;
+  /* Justifier le texte */
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  /* Supprimer la marge inférieure du paragraphe */
+}
+
+.section4-image {
+  width: 60%;
+  /* La partie droite qui contiendra l'image */
+  height: 100%;
+  /* Hauteur maximale égale à la section */
+  /* Position relative pour placer l'image par rapport au conteneur */
+}
+
+.section4-image img {
+  margin-top: -100px;
+  position: absolute;
+  /* Position absolue pour ajuster l'image */
+  bottom: 0;
+  /* Aligner le bas de l'image avec le bas de la section */
+  left: 0;
+  /* Aligner l'image sur la partie gauche du conteneur */
+  width: 100%;
+  /* Pour que l'image prenne toute la largeur du conteneur */
+  height: auto;
+  /* Ajuster la hauteur de l'image de manière proportionnelle */
+  z-index: 20;
+  /* Placer l'image en arrière-plan par rapport au texte */
+}
+
+
+
+
+
+footer {
+  height: 300px;
+  background-image: url('./images/newsletter.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.custom-container {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 20px;
+}
+
+
+.left-part {
+  flex: 1;
+  max-width: 70%;
+  margin: auto;
+}
+
+.left-part h3 {
+  color: #7266AE;
+  font-weight: 700;
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.form-inline input {
+  width: 600px;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+
+}
+
+.form-inline button {
+  width: 400px;
+  margin-top: 30px;
+  margin-left: 10px;
+  padding: 15px;
+  border: none;
+  background-color: #7266AE;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
