@@ -8,6 +8,14 @@ body {
   background-color: #F9F7F3;
 }
 
+a {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
 .navbar-ul {
   list-style-type: none;
   margin: 0;
