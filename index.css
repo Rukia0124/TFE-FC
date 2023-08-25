@@ -16,6 +16,17 @@ a {
   color: inherit;
 }
 
+#changeLanguageButton {
+  position: fixed;
+  bottom: 0;
+  padding: 5px 10px;
+  border: #7266AE 1px solid;
+  border-radius: 25px;
+  background-color: #7266AE;
+  color: #F9F7F3;
+  margin: 10px;
+}
+
 .navbar-ul {
   list-style-type: none;
   margin: 0;
