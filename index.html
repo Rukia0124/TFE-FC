@@ -12,21 +12,21 @@
 </head>
 
 <body>
-  <button id="changeLanguageButton" style="z-index: 100;">EN</button>
   <div id="fr-content">
     <header>
       <nav class="navbar" id="main-header">
         <a class="logo" href="#">LOGO</a>
         <div class="navbar-container">
           <ul class="navbar-ul">
+            <li><button id="changeLanguageButton" style="z-index: 100;">EN</button></li>
             <li>
-              <a class="nav-link" href="#section4">Blockchain</a>
+              <a class="nav-link" href="#blockchain">Blockchain</a>
             </li>
             <li>
-              <a class="nav-link" href="#section3">Responsabilité</a>
+              <a class="nav-link" href="#responsability">Responsabilité</a>
             </li>
             <li>
-              <a class="nav-link" href="#section1">Label</a>
+              <a class="nav-link" href="#label">Label</a>
             </li>
           </ul>
         </div>
@@ -58,7 +58,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="label">
         <div id="section1">
           <img src="./images/label.png" alt="Infirmière de médecins sans frontière soignant un bébé">
           <div class="section1-text">
@@ -69,7 +69,9 @@
           </div>
         </div>
       </section>
+      <br id="responsability">
 
+      </br>
       <section id="section3">
         <div>
           <div>
@@ -108,7 +110,7 @@
             </div>
           </div>
       </section>
-      <section>
+      <section id="blockchain">
         <div id="section4">
           <div class="section4-texte">
             <h2>Redéfinir le financement</h2>
@@ -312,26 +314,16 @@
       });
     });
 
-    document.addEventListener("DOMContentLoaded", function () {
-      const changeLanguageButton = document.getElementById("changeLanguageButton");
-      const frContent = document.getElementById("fr-content");
-      const enContent = document.getElementById("en-content");
-      let isEnglish = false; // Keeps track of the current language
+    const changeLanguageButton = document.getElementById('changeLanguageButton');
+    // Gestionnaire d'événement pour le bouton de changement de langue
+    changeLanguageButton.addEventListener('click', function () {
+      const currentLanguage = document.documentElement.lang; // Obtenir la langue actuelle
 
-      changeLanguageButton.addEventListener("click", function () {
-        console.log("ok");
-        isEnglish = !isEnglish; // Toggle the language
+      // Déterminer quelle page charger en fonction de la langue actuelle
+      const newPage = currentLanguage === 'fr' ? 'en.html' : 'index.html';
 
-        if (isEnglish) {
-          frContent.style.display = "none";
-          enContent.style.display = "block";
-          changeLanguageButton.textContent = "FR";
-        } else {
-          frContent.style.display = "block";
-          enContent.style.display = "none";
-          changeLanguageButton.textContent = "EN";
-        }
-      });
+      // Rediriger vers la nouvelle page
+      window.location.href = newPage;
     });
   </script>
 </body>

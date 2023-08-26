@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Translucentia - A Label for Better Transparency</title>
+</head>
+
+<body>
+
+  <div id="en-content">
+    <header>
+      <nav class="navbar" id="main-header">
+        <a class="logo" href="#">LOGO</a>
+        <div class="navbar-container">
+          <ul class="navbar-ul">
+            <li><button id="changeLanguageButton" style="z-index: 100;">FR</button></li>
+            <li>
+              <a class="nav-link" href="#blockchain">Blockchain</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#responsability">Responsibility</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#label">Label</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </nav>
+
+
+      <div id="head">
+
+        <h1>The Path to <br> Better Transparency <br> Starts Here</h1>
+        <p>The world is evolving, and so are your transparency needs. <br>That's why we're launching this project.</p>
+        <button><a href="#footer">Sign up for more information</a></button>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div id="section2">
+          <h2>Our Project for Better Transparency</h2>
+          <div class="projects">
+            <div>
+              <img src="./images/certificat.png" alt="certification illustration">
+              <p>Certify Partnerships</p>
+            </div>
+            <div>
+              <img src="./images/suivi.png" alt="action tracking illustration">
+              <p>Track and Know <br> What's Happening on the Ground</p>
+            </div>
+            <div>
+              <img src="./images/financement.png" alt="financing system illustration">
+              <p>Transparency in Financing</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="label">
+        <div id="section1">
+          <img src="./images/label.png" alt="Médecins Sans Frontières nurse caring for a baby">
+          <div class="section1-text">
+            <h2>A Label for Better Certification</h2>
+            <p>A universal charter for all partnerships creates better understanding for everyone. More transparency,
+              more trust. Enhanced capacity for action.</p>
+            <button><a href="#footer">Learn more</a></button>
+          </div>
+        </div>
+      </section>
+      <br id="responsability">
+
+      </br>
+      <section id="section3">
+        <div>
+          <div>
+            <h2>Partnership Tracking Platform</h2>
+          </div>
+          <div class="suivi">
+            <div>
+              <h3>All Certified Partnerships on One Page</h3>
+              <p>By grouping all partnerships on one page, they become easier to track, enabling a simpler understanding
+                of the economic stakes they represent.</p>
+              <button><a href="#footer">Learn more <i class="fa-solid fa-chevron-right"></i></a></button>
+            </div>
+            <div>
+              <h3>Tracking Actions and Progress</h3>
+              <p>You'll be able to track the progress of actions for each certified partnership on the page.
+                This way, you can better understand the utility and necessity of these partnerships for our actions.</p>
+              <button><a href="#footer">Learn more <i class="fa-solid fa-chevron-right"></i></a></button>
+            </div>
+            <div>
+              <h3>Crowdfunding</h3>
+              <p>Sponsor one or more actions of your choice to learn more about what's happening on the ground
+                or
+                simply to support a cause that matters to you.</p>
+              <button><a href="#footer">Learn more <i class="fa-solid fa-chevron-right"></i></a></button>
+            </div>
+            <div>
+              <h3>Request More Transparency</h3>
+              <p>You are important stakeholders in our actions, which is why it's crucial that you ask for more so we
+                can
+                continue evolving for you and them.</p>
+              <button> <a href="#footer">Learn more <i class="fa-solid fa-chevron-right"></i></a></button>
+            </div>
+          </div>
+          <br>
+      </section>
+      <section id="blockchain">
+        <div id="section4">
+          <div class="section4-texte">
+            <h2>Redefining Financing</h2>
+            <h3>New Transparency Through Blockchain</h3>
+            <p>By creating a stable currency, we take the best of cryptocurrencies. No volatility and increased
+              transparency.</p>
+            <p>All transactions made with the stable currency will be visible to everyone on the blockchain. This way,
+              you'll know how your money is being used and you can demand accountability.</p>
+          </div>
+
+          <img class="blockchain" src="./images/blockchain.png" alt="illustration">
+
+        </div>
+      </section>
+    </main>
+
+
+    <footer id="footer">
+      <div class="custom-container">
+        <div class="left-part">
+          <h3>Newsletter</h3>
+          <div id="message" class="mt-3"></div>
+          <form id="subscription-form" class="form-inline">
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Email Address">
+            </div>
+            <button type="submit">Subscribe <i class="fa-solid fa-chevron-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    // Listen for scroll event on the window
+    window.addEventListener('scroll', function () {
+      // Get the header
+      const header = document.getElementById('main-header');
+
+      // Get the positions of the sections
+      const section1Pos = document.getElementById('section1').offsetTop;
+      const section3Pos = document.getElementById('section3').offsetTop;
+
+      // Get the current scroll position
+      const scrollPos = window.scrollY || document.documentElement.scrollTop;
+
+      // Change the background color of the header based on scroll position
+      if (scrollPos > 868) {
+        header.classList.add('new-background');
+        header.style.backgroundColor = "#7266AE";
+      } else {
+        header.classList.remove('new-background');
+        header.style.backgroundColor = "rgba(0, 0, 0, 0.511)";
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("subscription-form");
+      const messageContainer = document.getElementById("message");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        form.reset();
+
+        // Display the message
+        messageContainer.textContent = "You have successfully subscribed!";
+        setTimeout(function () {
+          messageContainer.textContent = "";
+        }, 5000); // Remove the message after 5 seconds
+      });
+    });
+
+
+    const changeLanguageButton = document.getElementById('changeLanguageButton');
+
+    // Gestionnaire d'événement pour le bouton de changement de langue
+    changeLanguageButton.addEventListener('click', function () {
+      const currentLanguage = document.documentElement.lang; // Obtenir la langue actuelle
+
+      // Déterminer quelle page charger en fonction de la langue actuelle
+      const newPage = currentLanguage === 'fr' ? 'en.html' : 'index.html';
+
+      // Rediriger vers la nouvelle page
+      window.location.href = newPage;
+    });
+  </script>
+</body>
+
+</html>
