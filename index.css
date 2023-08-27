@@ -287,15 +287,16 @@ section {
   overflow: visible;
   display: flex;
   background-color: #7266AE;
-  height: 600px;
+  height: 800px;
   width: 100%;
 }
 
 
 
 .section4-texte {
-  margin-left: 130px;
-  width: 35%;
+  margin-left: 80px;
+  margin-top: 40px;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -337,6 +338,7 @@ section {
   box-sizing: content-box;
   overflow: visible;
   height: 120%;
+  width: 60%;
   align-self: end;
 }
 
@@ -501,6 +503,18 @@ footer {
 
 }
 
+@media (max-width: 1600px) {
+  .section4-texte {
+    margin-left: 20px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+  }
+}
 
 /* VERSION MOBILE */
 @media (max-width: 768px) {
