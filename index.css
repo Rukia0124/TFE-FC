@@ -173,6 +173,8 @@ section {
 
 #section2 {
   text-align: center;
+  justify-content: start;
+  text-align: left;
   margin-top: 100px;
   padding: 50px 0;
 }
@@ -214,6 +216,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: left;
+  text-align: left;
 }
 
 #section3 {
